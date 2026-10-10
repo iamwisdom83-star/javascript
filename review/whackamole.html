@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#dff2ed" />
+    <title>두더지 잡기</title>
+    <link rel="stylesheet" href="whackamole.css" />
+    <script src="whackamole.js" defer></script>
+  </head>
+  <body>
+    <main class="game">
+      <div class="topline">
+        <span>WEEKEND ARCADE</span><span>ROUND 01</span>
+      </div>
+      <h1>두더지 잡기</h1>
+      <p class="subtitle">두더지가 보이면 빠르게 눌러 보세요!</p>
+
+      <section class="scoreboard" aria-label="게임 기록">
+        <div class="stat">
+          <span class="stat-label">점수</span>
+          <span class="stat-value" id="score">0</span>
+        </div>
+        <div class="stat">
+          <span class="stat-label">남은 시간</span>
+          <span class="stat-value"
+            ><span id="time">30</span><small>초</small></span
+          >
+        </div>
+      </section>
+
+      <div class="board-wrap">
+        <div class="board" id="board" aria-label="두더지 게임판">
+          <button class="hole" type="button" aria-label="첫 번째 구멍">
+            <span class="mole" aria-hidden="true">🐹</span>
+          </button>
+          <button class="hole" type="button" aria-label="두 번째 구멍">
+            <span class="mole" aria-hidden="true">🐹</span>
+          </button>
+          <button class="hole" type="button" aria-label="세 번째 구멍">
+            <span class="mole" aria-hidden="true">🐹</span>
+          </button>
+          <button class="hole" type="button" aria-label="네 번째 구멍">
+            <span class="mole" aria-hidden="true">🐹</span>
+          </button>
+          <button class="hole" type="button" aria-label="다섯 번째 구멍">
+            <span class="mole" aria-hidden="true">🐹</span>
+          </button>
+          <button class="hole" type="button" aria-label="여섯 번째 구멍">
+            <span class="mole" aria-hidden="true">🐹</span>
+          </button>
+          <button class="hole" type="button" aria-label="일곱 번째 구멍">
+            <span class="mole" aria-hidden="true">🐹</span>
+          </button>
+          <button class="hole" type="button" aria-label="여덟 번째 구멍">
+            <span class="mole" aria-hidden="true">🐹</span>
+          </button>
+          <button class="hole" type="button" aria-label="아홉 번째 구멍">
+            <span class="mole" aria-hidden="true">🐹</span>
+          </button>
+        </div>
+      </div>
+
+      <p class="message" id="message" aria-live="polite">
+        준비됐나요? 시작 버튼을 눌러 주세요.
+      </p>
+      <button class="start-button" id="start" type="button">게임 시작</button>
+    </main>
+  </body>
+</html>
